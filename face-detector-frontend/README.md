@@ -1,4 +1,4 @@
-Certainly! Here's a detailed README.md for your Face Detection Application that includes both the frontend (React/Vite) and backend (Flask) components.
+
 
 ```markdown
 # Face Detection Application 👤✨
@@ -198,13 +198,3 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 Enjoy building with this Face Detection app! 🎉 Feel free to open issues or contribute if you have ideas for improvements. 🚀
 ```
-
-### Key Points:
-- **Project Overview:** Clear intro with emojis to make it engaging.
-- **Installation:** Step-by-step instructions for setting up both frontend and backend.
-- **Usage:** Detailed API description with example requests and responses.
-- **Technologies Used:** Key technologies for both frontend and backend.
-- **Contributing:** A simple guide to contribute with code style and testing info.
-- **Screenshots:** Placeholder for any demo images you'd like to showcase.
-
-You can adjust and add any extra details you think are relevant or specific to your application.
