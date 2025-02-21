@@ -116,7 +116,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-cols items-center align-center justify-center bg-[url('assets/background.svg')] text-white">
+    <div className="min-h-screen flex flex-cols items-center align-center justify-center bg-blue-900">
       <div className="bg-white/30 backdrop-blur-lg border border-white/30 rounded-lg w-full h-screen md:h-full md:w-auto md:max-w-4xl p-5 flex flex-col space-y-8 items-center justify-center">
         <h1 className="text-3xl font-bold text-center mb-2">FaceFinder</h1>
         <p className="text-center text-gray-100 mb-2">Detect faces and eyes in images or real-time video</p>
@@ -232,7 +232,7 @@ function App() {
         
         <button 
           onClick={() => setShowModal(true)}
-          className="text-sm text-blue-600 underline mx-auto"
+          className="text-sm text-white-900 underline mx-auto"
         >
           help
         </button>
