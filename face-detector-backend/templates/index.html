@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FaceFinder - Real-time Face Detection</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4 max-w-4xl">
+        <h1 class="text-3xl font-bold text-center mb-4">FaceFinder</h1>
+        <p class="text-center text-gray-600 mb-8">Real-time face and eye detection</p>
+        
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">Webcam Live Feed</h2>
+            <div class="relative">
+                <img src="/video_feed" class="w-full h-auto border rounded-lg" alt="Live webcam feed with face detection">
+            </div>
+            <div class="mt-4 text-right">
+                <button id="stopCamera" class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
+                    Stop Camera
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('stopCamera').addEventListener('click', async () => {
+            try {
+                await fetch('/api/stop_camera', { method: 'POST' });
+                alert('Camera stopped. Refresh the page to restart.');
+            } catch (err) {
+                console.error('Error stopping camera:', err);
+            }
+        });
+    </script>
+</body>
+</html>
+        
